@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: r72c6h8kk7-ops/SoloVape-
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "catalog"
+    label: "Каталог"
+    files:
+      - name: "products"
+        label: "Товары"
+        file: "products.json"
+        fields:
+          - name: "products"
+            label: "Список товаров"
+            widget: "list"
+            fields:
+              - {label: "Название", name: "title", widget: "string"}
+              - {label: "Цена", name: "price", widget: "string"}
+              - {label: "Количество", name: "stock", widget: "number"}
+              - {label: "Фотография", name: "image", widget: "image"}
