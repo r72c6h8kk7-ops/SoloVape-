@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>SoloVape Shop</title>
+    <style>
+        body { background-color: #121212; color: #ffffff; font-family: sans-serif; padding: 20px; transition: 0.3s; }
+        .category { margin-bottom: 30px; }
+        .product-card { background: #1e1e1e; padding: 15px; border-radius: 10px; margin: 10px 0; border: 1px solid #333; }
+        button { background: #007bff; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; }
+        .lang-btn { background: #444; margin-right: 5px; }
+    </style>
+</head>
+<body>
+    <div style="text-align: right;">
+        <button class="lang-btn" onclick="setLang('ru')">RU</button>
+        <button class="lang-btn" onclick="setLang('en')">EN</button>
+    </div>
+    
+    <h1 id="title">Каталог SoloVape</h1>
+    <div id="catalog"></div>
+
+    <script>
+        let currentLang = 'ru';
+        let productData = {};
+
+        fetch('products.json').then(res => res.json()).then(data => {
+            productData = data;
+            render();
+        });
+
+        function setLang(lang) {
+            currentLang = lang;
+            render();
+        }
+
+        function render() {
+            const catalog = document.getElementById('catalog');
+            catalog.innerHTML = '';
+            document.getElementById('title').innerText = currentLang === 'ru' ? 'Каталог SoloVape' : 'SoloVape Catalog';
+
+            productData.categories.forEach(cat => {
+                const section = document.createElement('div');
+                section.className = 'category';
+                section.innerHTML = `<h2>${currentLang === 'ru' ? cat.name_ru : cat.name_en}</h2>`;
+                
+                cat.items.forEach(item => {
+                    const titleText = currentLang === 'ru' ? item.title_ru : item.title_en;
+                    section.innerHTML += `
+                        <div class="product-card">
+                            <h3>${titleText}</h3>
+                            <p>${currentLang === 'ru' ? 'Цена' : 'Price'}: ${item.price} | ${currentLang === 'ru' ? 'В наличии' : 'Stock'}: ${item.stock}</p>
+                            <button onclick="order('${titleText}')">${currentLang === 'ru' ? 'Заказать в Telegram' : 'Order via Telegram'}</button>
+                        </div>`;
+                });
+                catalog.appendChild(section);
+            });
+        }
+
+        function order(title) {
+            const tgLink = `https://t.me/Solo_Vape34?text=Привет, хочу заказать: ${title}`;
+            window.open(tgLink, '_blank');
+        }
+    </script>
+</body>
+</html>
