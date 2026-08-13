@@ -22,7 +22,7 @@
       "name_ru": "Жидкости", 
       "name_en": "E-liquids",
       "items": [
-        { "title_ru": "Жидкость пример", "title_en": "Liquid example", "price": "15 €", "stock": 5 }
+        { "title_ru": "Жидкость пример", "title_en": "Liquid example", "price": "20 €", "stock": 1 }
       ]
     },
     {
