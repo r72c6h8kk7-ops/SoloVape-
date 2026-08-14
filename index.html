@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoloVape Shop</title>
+    <style>
+        /* Заставка (Splash Screen) */
+        #splash-screen {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: #121212; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; z-index: 9999;
+            transition: opacity 0.8s ease;
+        }
+        .splash-logo { width: 120px; height: 120px; margin-bottom: 15px; border-radius: 50%; object-fit: cover; }
+        .splash-name { color: #d4af37; font-size: 24px; font-weight: bold; letter-spacing: 2px; }
+
+        body { background-color: #121212; color: #ffffff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; padding: 15px; margin: 0; }
+        
+        header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; background: #1a1a1a; padding: 10px 14px; border-radius: 16px; border: 1px solid #2a2a2a; }
+        .brand { display: flex; align-items: center; gap: 10px; }
+        .brand-logo { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; background: #333; }
+        .brand-name { font-size: 16px; font-weight: 600; color: #fff; letter-spacing: 0.5px; }
+        
+        .btn-ctrl { background: #262626; color: #fff; border: 1px solid #333; padding: 6px 12px; border-radius: 14px; cursor: pointer; font-size: 13px; }
+        
+        .search-box { width: 100%; padding: 12px 15px; background: #1e1e1e; border: 1px solid #333; border-radius: 14px; color: #fff; font-size: 15px; margin-bottom: 15px; box-sizing: border-box; outline: none; }
+        
+        .categories-scroll { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 5px; margin-bottom: 15px; scrollbar-width: none; }
+        .cat-btn { background: #1e1e1e; color: #aaa; border: 1px solid #333; padding: 8px 16px; border-radius: 20px; cursor: pointer; white-space: nowrap; font-size: 14px; }
+        .cat-btn.active { background: #007bff; color: #fff; border-color: #007bff; }
+
+        .product-card { background: #1a1a1a; border: 1px solid #2a2a2a; padding: 12px; border-radius: 16px; margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between; }
+        .product-left { display: flex; align-items: center; gap: 12px; flex: 1; cursor: pointer; }
+        .product-img { width: 55px; height: 55px; border-radius: 12px; object-fit: cover; background: #222; }
+        .product-info h3 { font-size: 15px; margin: 0 0 4px 0; color: #fff; }
+        .product-info p { font-size: 13px; color: #888; margin: 0; }
+        
+        .action-area { display: flex; align-items: center; gap: 8px; }
+        .status-badge { font-size: 11px; padding: 4px 8px; border-radius: 8px; white-space: nowrap; }
+        .status-green { background: rgba(40, 167, 69, 0.15); color: #28a745; }
+        .status-yellow { background: rgba(255, 193, 7, 0.15); color: #ffc107; }
+
+        .icon-btn { background: #262626; border: 1px solid #333; color: #fff; width: 36px; height: 36px; border-radius: 10px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+        .btn-order { background: #007bff; border-color: #007bff; color: #fff; font-weight: bold; }
+
+        #toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #333; color: #fff; padding: 10px 20px; border-radius: 10px; display: none; z-index: 1000; font-size: 14px; border: 1px solid #444; }
+    </style>
+</head>
+<body>
+
+    <!-- Заставка (плавно исчезает через 2 сек) -->
+    <div id="splash-screen">
+        <img src="logo.png.jpg" class="splash-logo" alt="Logo">
+        <div class="splash-name">SOLOVAPE</div>
+    </div>
+
+    <header>
+        <div class="brand">
+            <img src="logo.png.jpg" class="brand-logo" alt="Logo">
+            <span class="brand-name">SOLOVAPE</span>
+        </div>
+        <div class="top-controls">
+            <button class="btn-ctrl" onclick="toggleLang()" id="lang-toggle">🌐 RU</button>
+        </div>
+    </header>
+
+    <input type="text" id="search-input" class="search-box" placeholder="Поиск по названию..." oninput="render()">
+    
+    <div class="categories-scroll" id="categories-bar"></div>
+    <p id="counter" style="color: #888; font-size: 13px; margin: 0 0 15px 5px;"></p>
+    
+    <div id="catalog"></div>
+    <div id="toast">Скопировано!</div>
+
+    <script>
+        // Скрытие заставки
+        window.onload = () => {
+            setTimeout(() => {
+                document.getElementById('splash-screen').style.opacity = '0';
+                setTimeout(() => { document.getElementById('splash-screen').style.display = 'none'; }, 800);
+            }, 2000);
+        };
+
+        let currentLang = 'ru';
+        let currentCategory = 'all';
+        let productData = {};
+
+        // Загрузка товаров
+        fetch('products.json')
+            .then(res => res.json())
+            .then(data => { productData = data; render(); })
+            .catch(err => console.error('Ошибка загрузки products.json:', err));
+
+        function toggleLang() {
+            currentLang = currentLang === 'ru' ? 'en' : 'ru';
+            document.getElementById('lang-toggle').innerText = currentLang === 'ru' ? '🌐 RU' : '🌐 EN';
+            document.getElementById('search-input').placeholder = currentLang === 'ru' ? 'Поиск по названию...' : 'Search products...';
+            render();
+        }
+
+        function selectCategory(catName) {
+            currentCategory = catName;
+            render();
+        }
+
+        function render() {
+            const searchQuery = document.getElementById('search-input').value.toLowerCase();
+            const catBar = document.getElementById('categories-bar');
+            catBar.innerHTML = '';
+            
+            let allText = currentLang === 'ru' ? 'Все' : 'All';
+            catBar.innerHTML += `<button class="cat-btn ${currentCategory === 'all' ? 'active' : ''}" onclick="selectCategory('all')">${allText}</button>`;
+            
+            let totalProducts = 0;
+            if (productData.categories) {
+                productData.categories.forEach(cat => {
+                    totalProducts += cat.items.length;
+                    const cName = currentLang === 'ru' ? cat.name_ru : cat.name_en;
+                    const isActive = currentCategory === cat.name_ru ? 'active' : '';
+                    catBar.innerHTML += `<button class="cat-btn ${isActive}" onclick="selectCategory('${cat.name_ru}')">${cName}</button>`;
+                });
+            }
+            
+            document.getElementById('counterлиги' = ''); // заглушка счетчика
+            const counterEl = document.getElementById('counter');
+            if (counterEl) {
+                counterEl.innerText = currentLang === 'ru' ? `Всего товаров: ${totalProducts}` : `Total items: ${totalProducts}`;
+            }
+
+            const catalog = document.getElementById('catalog');
+            catalog.innerHTML = '';
+            
+            if (productData.categories) {
+                productData.categories.forEach(cat => {
+                    if (currentCategory !== 'all' && currentCategory !== cat.name_ru) return;
+                    
+                    cat.items.forEach(item => {
+                        const title = currentLang === 'ru' ? item.title_ru : item.title_en;
+                        if (searchQuery && !title.toLowerCase().includes(searchQuery)) return;
+                        
+                        const catTitle = currentLang === 'ru' ? cat.name_ru : cat.name_en;
+                        const imgSrc = item.image || 'https://images.unsplash.com/photo-1523275335684-37898b6baf30';
+                        
+                        let stockHtml = item.stock > 3 
+                            ? `<span class="status-badge status-green">${currentLang === 'ru' ? 'В наличии' : 'In stock'}</span>` 
+                            : `<span class="status-badge status-yellow">${currentLang === 'ru' ? 'Осталось: ' + item.stock : 'Left: ' + item.stock}</span>`;
+
+                        catalog.innerHTML += `
+                            <div class="product-card">
+                                <div class="product-left" onclick="order('${title}')">
+                                    <img src="${imgSrc}" class="product-img" alt="">
+                                    <div class="product-info">
+                                        <h3>${title}</h3>
+                                        <p>${catTitle} · ${item.price}</p>
+                                    </div>
+                                </div>
+                                <div class="action-area">
+                                    ${stockHtml}
+                                    <button class="icon-btn" onclick="copyTitle('${title}')" title="Копировать">📋</button>
+                                    <button class="icon-btn btn-order" onclick="order('${title}')" title="Заказать">›</button>
+                                </div>
+                            </div>`;
+                    });
+                });
+            }
+        }
+
+        function copyTitle(title) {
+            navigator.clipboard.writeText(title).then(() => {
+                const toast = document.getElementById('toast');
+                toast.style.display = 'block';
+                setTimeout(() => { toast.style.display = 'none'; }, 1500);
+            });
+        }
+
+        function order(title) {
+            const text = currentLang === 'ru' ? `Привет, хочу заказать: ${title}` : `Hi, I want to order: ${title}`;
+            window.open(`https://t.me/Solo_Vape34?text=${encodeURIComponent(text)}`, '_blank');
+        }
+    </script>
+</body>
+</html>
