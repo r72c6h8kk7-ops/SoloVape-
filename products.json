@@ -63,7 +63,7 @@
           "price": "20 €",
           "image": "IMG_3352.jpeg",
           "variants": [
-            { "name_ru": "Blueberry ice", "name_en": "Blueberry ice", "stock": 10 }
+            { "name_ru": "Blueberry ice", "name_en": "Blueberry ice", "stock": 3 }
           ]
         },
         {
@@ -72,11 +72,10 @@
           "price": "32 €",
           "image": "IMG_3351.jpeg",
           "variants": [
-            { "name_ru": "Double appel", "name_en": "Double appel", "stock": 10 },
-            { "name_ru": "Cherry cola", "name_en": "Cherry cola", "stock": 10 },
-            { "name_ru": "Strawberry watermelon", "name_en": "Strawberry watermelon", "stock": 10 },
-            { "name_ru": "Watermelon ice", "name_en": "Watermelon ice", "stock": 10 },
-            { "name_ru": "Grape ice", "name_en": "Grape ice", "stock": 10 }
+            { "name_ru": "Double appel", "name_en": "Double appel", "stock": 1 },
+            { "name_ru": "Grape ice", "name_en": "Grape ice", "stock": 4 },
+            { "name_ru": "Strawberry watermelon", "name_en": "Strawberry watermelon", "stock": 2 },
+            { "name_ru": "Watermelon ice", "name_en": "Watermelon ice", "stock": 1 },
           ]
         }
       ]
@@ -91,10 +90,10 @@
           "price": "35 €",
           "image": "IMG_3349.jpeg",
           "variants": [
-            { "name_ru": "Lavender purple", "name_en": "Lavender purple", "stock": 10 },
-            { "name_ru": "Cosmic black", "name_en": "Cosmic black", "stock": 10 },
-            { "name_ru": "Coral red", "name_en": "Coral red", "stock": 10 },
-            { "name_ru": "Blue silk", "name_en": "Blue silk", "stock": 10 }
+            { "name_ru": "Lavender purple", "name_en": "Lavender purple", "stock": 1 },
+            { "name_ru": "Cosmic black", "name_en": "Cosmic black", "stock": 1 },
+            { "name_ru": "Coral red", "name_en": "Coral red", "stock": 5 },
+            { "name_ru": "Blue silk", "name_en": "Blue silk", "stock": 3 }
           ]
         },
         {
@@ -103,8 +102,7 @@
           "price": "30 €",
           "image": "IMG_3348.jpeg",
           "variants": [
-            { "name_ru": "Blue silk", "name_en": "Blue silk", "stock": 10 },
-            { "name_ru": "Violet silk", "name_en": "Violet silk", "stock": 10 }
+            { "name_ru": "Violet silk", "name_en": "Violet silk", "stock": 1 }
           ]
         },
         {
@@ -113,15 +111,15 @@
           "price": "40 €",
           "image": "IMG_3354.jpeg",
           "variants": [
-            { "name_ru": "Pearl White", "name_en": "Pearl White", "stock": 10 },
-            { "name_ru": "Dreamy Pink", "name_en": "Dreamy Pink", "stock": 10 },
-            { "name_ru": "Scorching Cloud", "name_en": "Scorching Cloud", "stock": 10 },
-            { "name_ru": "Silk Gray", "name_en": "Silk Gray", "stock": 10 },
-            { "name_ru": "Silk Brown", "name_en": "Silk Brown", "stock": 10 },
-            { "name_ru": "Abyssal Blue", "name_en": "Abyssal Blue", "stock": 10 },
-            { "name_ru": "Carbon Fiber Gray", "name_en": "Carbon Fiber Gray", "stock": 10 },
-            { "name_ru": "Cosmic Black", "name_en": "Cosmic Black", "stock": 10 },
-            { "name_ru": "Slate Black", "name_en": "Slate Black", "stock": 10 }
+            { "name_ru": "Pearl White", "name_en": "Pearl White", "stock": 1 },
+            { "name_ru": "Dreamy Pink", "name_en": "Dreamy Pink", "stock": 1 },
+            { "name_ru": "Scorching Cloud", "name_en": "Scorching Cloud", "stock": 1 },
+            { "name_ru": "Silk Gray", "name_en": "Silk Gray", "stock": 1 },
+            { "name_ru": "Silk Brown", "name_en": "Silk Brown", "stock": 1 },
+            { "name_ru": "Abyssal Blue", "name_en": "Abyssal Blue", "stock": 1 },
+            { "name_ru": "Carbon Fiber Gray", "name_en": "Carbon Fiber Gray", "stock": 1 },
+            { "name_ru": "Cosmic Black", "name_en": "Cosmic Black", "stock": 1 },
+            { "name_ru": "Slate Black", "name_en": "Slate Black", "stock": 1 }
           ]
         },
         {
@@ -130,17 +128,17 @@
           "price": "35 €",
           "image": "IMG_3355.jpeg",
           "variants": [
-            { "name_ru": "Black", "name_en": "Black", "stock": 10 },
-            { "name_ru": "Brown", "name_en": "Brown", "stock": 10 },
-            { "name_ru": "Titanium Black", "name_en": "Titanium Black", "stock": 10 },
-            { "name_ru": "Titanium Silver", "name_en": "Titanium Silver", "stock": 10 },
-            { "name_ru": "Plume White", "name_en": "Plume White", "stock": 10 },
-            { "name_ru": "Plume Pink", "name_en": "Plume Pink", "stock": 10 },
-            { "name_ru": "Plume Blue", "name_en": "Plume Blue", "stock": 10 },
-            { "name_ru": "Jelly Green", "name_en": "Jelly Green", "stock": 10 },
-            { "name_ru": "Jelly Pink", "name_en": "Jelly Pink", "stock": 10 },
-            { "name_ru": "Jelly Blue", "name_en": "Jelly Blue", "stock": 10 },
-            { "name_ru": "Jelly Orange", "name_en": "Jelly Orange", "stock": 10 }
+            { "name_ru": "Black", "name_en": "Black", "stock": 1 },
+            { "name_ru": "Brown", "name_en": "Brown", "stock": 1 },
+            { "name_ru": "Titanium Black", "name_en": "Titanium Black", "stock": 1 },
+            { "name_ru": "Titanium Silver", "name_en": "Titanium Silver", "stock": 1 },
+            { "name_ru": "Plume White", "name_en": "Plume White", "stock": 1 },
+            { "name_ru": "Plume Pink", "name_en": "Plume Pink", "stock": 1 },
+            { "name_ru": "Plume Blue", "name_en": "Plume Blue", "stock": 1 },
+            { "name_ru": "Jelly Green", "name_en": "Jelly Green", "stock": 1 },
+            { "name_ru": "Jelly Pink", "name_en": "Jelly Pink", "stock": 1 },
+            { "name_ru": "Jelly Blue", "name_en": "Jelly Blue", "stock": 1 },
+            { "name_ru": "Jelly Orange", "name_en": "Jelly Orange", "stock": 1 }
           ]
         },
         {
@@ -149,9 +147,9 @@
           "price": "20 €",
           "image": "IMG_3347.jpeg",
           "variants": [
-            { "name_ru": "0.6 ohm", "name_en": "0.6 ohm", "stock": 10 },
-            { "name_ru": "0.4 ohm", "name_en": "0.4 ohm", "stock": 10 },
-            { "name_ru": "0.8 ohm", "name_en": "0.8 ohm", "stock": 10 }
+            { "name_ru": "0.6 ohm", "name_en": "0.6 ohm", "stock": 4 },
+            { "name_ru": "0.4 ohm", "name_en": "0.4 ohm", "stock": 19 },
+            { "name_ru": "0.8 ohm", "name_en": "0.8 ohm", "stock": 1 }
           ]
         }
       ]
@@ -166,11 +164,11 @@
           "price": "20 €",
           "image": "IMG_3343.jpeg",
           "variants": [
-            { "name_ru": "Apple Pear", "name_en": "Apple Pear", "stock": 10 },
+            { "name_ru": "Apple Pear", "name_en": "Apple Pear", "stock": 5 },
             { "name_ru": "Grape Cherry", "name_en": "Grape Cherry", "stock": 10 },
-            { "name_ru": "Spear Mint", "name_en": "Spear Mint", "stock": 10 },
-            { "name_ru": "Grape", "name_en": "Grape", "stock": 10 },
-            { "name_ru": "Cherry", "name_en": "Cherry", "stock": 10 },
+            { "name_ru": "Spear Mint", "name_en": "Spear Mint", "stock": 7 },
+            { "name_ru": "Grape", "name_en": "Grape", "stock": 7 },
+            { "name_ru": "Cherry", "name_en": "Cherry", "stock": 8 },
             { "name_ru": "Jasmine Raspberry", "name_en": "Jasmine Raspberry", "stock": 10 }
           ]
         },
@@ -180,18 +178,18 @@
           "price": "20 €",
           "image": "IMG_3344.jpeg",
           "variants": [
-            { "name_ru": "Blueberry Mint", "name_en": "Blueberry Mint", "stock": 10 },
-            { "name_ru": "Grape Mint", "name_en": "Grape Mint", "stock": 10 },
-            { "name_ru": "Mint", "name_en": "Mint", "stock": 10 },
-            { "name_ru": "Tung Tung Tung Sahur", "name_en": "Tung Tung Tung Sahur", "stock": 10 },
-            { "name_ru": "Ballerina Cappuccino", "name_en": "Ballerina Cappuccino", "stock": 10 },
-            { "name_ru": "Energetic", "name_en": "Energetic", "stock": 10 },
+            { "name_ru": "Blueberry Mint", "name_en": "Blueberry Mint", "stock": 8 },
+            { "name_ru": "Grape Mint", "name_en": "Grape Mint", "stock": 4 },
+            { "name_ru": "Mint", "name_en": "Mint", "stock": 6 },
+            { "name_ru": "Tung Tung Tung Sahur", "name_en": "Tung Tung Tung Sahur", "stock": 8 },
+            { "name_ru": "Ballerina Cappuccino", "name_en": "Ballerina Cappuccino", "stock": 5 },
+            { "name_ru": "Energetic", "name_en": "Energetic", "stock": 11 },
             { "name_ru": "Sangria", "name_en": "Sangria", "stock": 10 },
             { "name_ru": "Vitamin", "name_en": "Vitamin", "stock": 10 },
-            { "name_ru": "Bubblegum", "name_en": "Bubblegum", "stock": 10 },
-            { "name_ru": "Forest Mint", "name_en": "Forest Mint", "stock": 10 },
+            { "name_ru": "Bubblegum", "name_en": "Bubblegum", "stock": 9 },
+            { "name_ru": "Forest Mint", "name_en": "Forest Mix", "stock": 10 },
             { "name_ru": "Triple Raspberry", "name_en": "Triple Raspberry", "stock": 10 },
-            { "name_ru": "Compote", "name_en": "Compote", "stock": 10 },
+            { "name_ru": "Compote", "name_en": "Compote", "stock": 9 },
             { "name_ru": "Grape Blackberry", "name_en": "Grape Blackberry", "stock": 10 }
           ]
         }
@@ -207,13 +205,12 @@
           "price": "10 €",
           "image": "IMG_3345.jpeg",
           "variants": [
-            { "name_ru": "Watermelon", "name_en": "Watermelon", "stock": 10 },
-            { "name_ru": "Icespear mint", "name_en": "Icespear mint", "stock": 10 },
-            { "name_ru": "Pineapple", "name_en": "Pineapple", "stock": 10 },
-            { "name_ru": "Banana hit", "name_en": "Banana hit", "stock": 10 },
-            { "name_ru": "Cherry", "name_en": "Cherry", "stock": 10 },
-            { "name_ru": "Blueberry", "name_en": "Blueberry", "stock": 10 },
-            { "name_ru": "Baron classic", "name_en": "Baron classic", "stock": 10 }
+            { "name_ru": "Watermelon", "name_en": "Watermelon", "stock": 3 },
+            { "name_ru": "Icespear mint", "name_en": "Icespear mint", "stock": 5 },
+            { "name_ru": "Pineapple", "name_en": "Pineapple", "stock": 4 },
+            { "name_ru": "Banana hit", "name_en": "Banana hit", "stock": 1 },
+            { "name_ru": "Cherry", "name_en": "Cherry", "stock": 1 },
+            { "name_ru": "Baron classic", "name_en": "Baron classic", "stock": 1 }
           ]
         }
       ]
