@@ -10,18 +10,18 @@
           "price": "30 €",
           "image": "IMG_2835.jpeg",
           "variants": [
-            { "name_ru": "Granny cherry", "name_en": "Granny cherry", "stock": 1 },
-            { "name_ru": "Grape ice", "name_en": "Grape ice", "stock": 2 },
-            { "name_ru": "Raspberry grapefruit lemon", "name_en": "Raspberry grapefruit lemon", "stock": 10 },
+            { "name_ru": "Granny cherry", "name_en": "Granny cherry", "stock": 10 },
+            { "name_ru": "Grape ice", "name_en": "Grape ice", "stock": 3 },
+            { "name_ru": "Raspberry grapefruit lemon", "name_en": "Raspberry grapefruit lemon", "stock": 17 },
             { "name_ru": "Kiwi pineapple peach", "name_en": "Kiwi pineapple peach", "stock": 10 },
-            { "name_ru": "Cherry pomegranate pineapple", "name_en": "Cherry pomegranate pineapple", "stock": 10 },
+            { "name_ru": "Cherry pomegranate pineapple", "name_en": "Cherry pomegranate pineapple", "stock": 14 },
             { "name_ru": "Watermelon ice", "name_en": "Watermelon ice", "stock": 10 },
-            { "name_ru": "Pine Needles", "name_en": "Pine Needles", "stock": 10 },
-            { "name_ru": "Blue razz ice", "name_en": "Blue razz ice", "stock": 10 },
-            { "name_ru": "Pear soda", "name_en": "Pear soda", "stock": 10 },
-            { "name_ru": "Sour strawberry dragonfruit", "name_en": "Sour strawberry dragonfruit", "stock": 10 },
-            { "name_ru": "Pomegranate burst", "name_en": "Pomegranate burst", "stock": 10 },
-            { "name_ru": "Banana milk", "name_en": "Banana milk", "stock": 10 }
+            { "name_ru": "Pine Needles", "name_en": "Pine Needles", "stock": 7 },
+            { "name_ru": "Blue razz ice", "name_en": "Blue razz ice", "stock": 5 },
+            { "name_ru": "Pear soda", "name_en": "Pear soda", "stock": 9 },
+            { "name_ru": "Sour strawberry dragonfruit", "name_en": "Sour strawberry dragonfruit", "stock": 9 },
+            { "name_ru": "Pomegranate burst", "name_en": "Pomegranate burst", "stock": 7 },
+            { "name_ru": "Banana milk", "name_en": "Banana milk", "stock": 7 }
           ]
         },
         {
