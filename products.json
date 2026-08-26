@@ -15,11 +15,11 @@
             { "name_ru": "Raspberry grapefruit lemon", "name_en": "Raspberry grapefruit lemon", "stock": 17 },
             { "name_ru": "Kiwi pineapple peach", "name_en": "Kiwi pineapple peach", "stock": 10 },
             { "name_ru": "Cherry pomegranate pineapple", "name_en": "Cherry pomegranate pineapple", "stock": 14 },
-            { "name_ru": "Watermelon ice", "name_en": "Watermelon ice", "stock": 10 },
+            { "name_ru": "Watermelon ice", "name_en": "Watermelon ice", "stock": 1 },
             { "name_ru": "Pine Needles", "name_en": "Pine Needles", "stock": 7 },
             { "name_ru": "Blue razz ice", "name_en": "Blue razz ice", "stock": 5 },
-            { "name_ru": "Pear soda", "name_en": "Pear soda", "stock": 9 },
-            { "name_ru": "Sour strawberry dragonfruit", "name_en": "Sour strawberry dragonfruit", "stock": 9 },
+            { "name_ru": "Pear soda", "name_en": "Pear soda", "stock": 11 },
+            { "name_ru": "Sour strawberry dragonfruit", "name_en": "Sour strawberry dragonfruit", "stock": 10 },
             { "name_ru": "Pomegranate burst", "name_en": "Pomegranate burst", "stock": 7 },
             { "name_ru": "Banana milk", "name_en": "Banana milk", "stock": 7 }
           ]
@@ -30,12 +30,12 @@
           "price": "25 €",
           "image": "IMG_3350.jpeg",
           "variants": [
-            { "name_ru": "Blueberry raspberry", "name_en": "Blueberry raspberry", "stock": 10 },
-            { "name_ru": "Strawberry watermelon", "name_en": "Strawberry watermelon", "stock": 10 },
-            { "name_ru": "Watermelon", "name_en": "Watermelon", "stock": 10 },
+            { "name_ru": "Blueberry raspberry", "name_en": "Blueberry raspberry", "stock": 7 },
+            { "name_ru": "Strawberry watermelon", "name_en": "Strawberry watermelon", "stock": 1 },
+            { "name_ru": "Watermelon", "name_en": "Watermelon", "stock": 2 },
             { "name_ru": "Grape mint", "name_en": "Grape mint", "stock": 10 },
-            { "name_ru": "Grape cherry", "name_en": "Grape cherry", "stock": 10 },
-            { "name_ru": "Blackberry cranberry", "name_en": "Blackberry cranberry", "stock": 10 }
+            { "name_ru": "Grape cherry", "name_en": "Grape cherry", "stock": 3 },
+            { "name_ru": "Blackberry cranberry", "name_en": "Blackberry cranberry", "stock": 3 }
           ]
         },
         {
@@ -44,10 +44,10 @@
           "price": "31 €",
           "image": "IMG_3346.jpeg",
           "variants": [
-            { "name_ru": "Strawberry Kiwi", "name_en": "Strawberry Kiwi", "stock": 10 },
+            { "name_ru": "Strawberry Kiwi", "name_en": "Strawberry Kiwi", "stock": 6 },
             { "name_ru": "Sour Blackberry Ice", "name_en": "Sour Blackberry Ice", "stock": 10 },
             { "name_ru": "Cranberry Pineapple", "name_en": "Cranberry Pineapple", "stock": 10 },
-            { "name_ru": "Pineapple Peach", "name_en": "Pineapple Peach", "stock": 10 },
+            { "name_ru": "Pineapple Peach", "name_en": "Pineapple Peach", "stock": 8 },
             { "name_ru": "Nordic Berry", "name_en": "Nordic Berry", "stock": 10 }
           ]
         }
