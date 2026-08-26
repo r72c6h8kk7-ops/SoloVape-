@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoloVape Shop</title>
+    
+    <style>
+        :root {
+            --bg-color: #0d0d0f;
+            --card-bg: #16161a;
+            --accent-purple: #8a2be2;
+            --accent-glow: rgba(138, 43, 226, 0.4);
+            --text-main: #ffffff;
+            --text-muted: #8c8c9b;
+            --border-color: #262630;
+        }
+
+        body { background-color: var(--bg-color); color: var(--text-main); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; padding: 15px; margin: 0; padding-bottom: 90px; }
+        
+        /* Заставка */
+        #splash-screen {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--bg-color); display: flex; flex-direction: column;
+            justify-content: center; align-items: center; z-index: 9999;
+            transition: opacity 0.8s ease;
+        }
+        .splash-logo { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; background: #222; box-shadow: 0 0 30px var(--accent-glow); }
+        .splash-name { color: #d4af37; font-size: 24px; font-weight: bold; letter-spacing: 2px; }
+
+        /* Шапка */
+        header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; background: var(--card-bg); padding: 12px 16px; border-radius: 20px; border: 1px solid var(--border-color); }
+        .brand { display: flex; align-items: center; gap: 10px; }
+        .brand-logo { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; background: #333; box-shadow: 0 0 10px var(--accent-glow); }
+        .brand-name { font-size: 16px; font-weight: 700; color: #fff; letter-spacing: 0.5px; }
+
+        .top-controls { display: flex; gap: 8px; align-items: center; }
+        .btn-ctrl { background: #1e1e24; color: #fff; border: 1px solid var(--border-color); padding: 8px 14px; border-radius: 14px; cursor: pointer; font-size: 13px; transition: 0.2s; }
+        .btn-cart { background: linear-gradient(135deg, #7b1fa2, #512da8); border: none; font-weight: 600; box-shadow: 0 4px 15px var(--accent-glow); }
+        
+        /* Основные вкладки */
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        /* Поиск */
+        .search-box { width: 100%; padding: 14px 18px; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; color: #fff; font-size: 15px; margin-bottom: 15px; box-sizing: border-box; outline: none; transition: 0.2s; }
+        .search-box:focus { border-color: var(--accent-purple); box-shadow: 0 0 12px var(--accent-glow); }
+
+        /* Категории */
+        .categories-scroll { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 10px; margin-bottom: 15px; scrollbar-width: none; }
+        .categories-scroll::-webkit-scrollbar { display: none; }
+        .cat-btn { background: var(--card-bg); color: var(--text-muted); border: 1px solid var(--border-color); padding: 10px 20px; border-radius: 20px; cursor: pointer; white-space: nowrap; font-size: 14px; font-weight: 500; transition: 0.2s; }
+        .cat-btn.active { background: linear-gradient(135deg, #7b1fa2, #512da8); color: #fff; border-color: var(--accent-purple); box-shadow: 0 4px 15px var(--accent-glow); }
+
+        /* Карточка модели */
+        .product-card { background: var(--card-bg); border: 1px solid var(--border-color); padding: 16px; border-radius: 20px; margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; transition: 0.2s; }
+        .product-card:active { transform: scale(0.98); }
+        .product-left { display: flex; align-items: center; gap: 14px; flex: 1; }
+        .product-img { width: 60px; height: 60px; border-radius: 14px; object-fit: cover; background: #222; }
+        .product-info h3 { font-size: 16px; margin: 0 0 5px 0; color: #fff; font-weight: 600; }
+        .product-info p { font-size: 13px; margin: 0; color: var(--text-muted); }
+        .arrow-icon { color: var(--text-muted); font-size: 18px; font-weight: bold; padding-left: 10px; }
+
+        /* Страница "О нас" */
+        .about-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 22px;
+            margin-bottom: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+        .about-card h2 { font-size: 20px; margin: 0 0 10px 0; color: #fff; }
+        .about-card p { font-size: 14px; color: var(--text-muted); line-height: 1.5; margin: 0; }
+        
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .stat-box {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 16px 10px;
+            text-align: center;
+        }
+        .stat-box h3 { font-size: 18px; color: var(--accent-purple); margin: 0 0 5px 0; text-shadow: 0 0 10px var(--accent-glow); }
+        .stat-box span { font-size: 11px; color: var(--text-muted); }
+
+        /* Модальное окно модели */
+        #model-modal {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8); backdrop-filter: blur(5px); display: none; justify-content: center; align-items: flex-end; z-index: 10000;
+        }
+        .model-content {
+            background: var(--card-bg); width: 100%; max-height: 85vh; border-radius: 28px 28px 0 0;
+            padding: 24px; box-sizing: border-box; display: flex; flex-direction: column; border-top: 1px solid var(--border-color);
+            box-shadow: 0 -10px 40px rgba(0,0,0,0.8);
+        }
+        .model-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; }
+        .model-title-block h2 { font-size: 18px; margin: 0 0 4px 0; color: #fff; }
+        .model-title-block p { font-size: 13px; color: var(--text-muted); margin: 0; }
+        .btn-close-model { background: #222; border: 1px solid var(--border-color); color: #fff; width: 34px; height: 34px; border-radius: 50%; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; }
+        
+        .variants-list { overflow-y: auto; max-height: 50vh; margin-bottom: 15px; padding-right: 4px; }
+        .variant-item { background: #1c1c24; border: 1px solid var(--border-color); padding: 12px 16px; border-radius: 16px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; }
+        .variant-left { display: flex; align-items: center; gap: 12px; }
+        .variant-info h4 { font-size: 14px; margin: 0 0 2px 0; color: #fff; font-weight: 500; }
+        .variant-info span { font-size: 12px; color: var(--text-muted); }
+        
+        .stock-indicator { background: rgba(40, 167, 69, 0.15); color: #28a745; font-size: 11px; font-weight: 600; padding: 4px 8px; border-radius: 8px; }
+
+        /* Корзина модалка */
+        #cart-modal {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8); backdrop-filter: blur(5px); display: none; justify-content: center; align-items: flex-end; z-index: 10000;
+        }
+        .cart-content {
+            background: var(--card-bg); width: 100%; max-height: 80vh; border-radius: 28px 28px 0 0;
+            padding: 24px; box-sizing: border-box; display: flex; flex-direction: column; border-top: 1px solid var(--border-color);
+        }
+        .cart-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; font-size: 18px; font-weight: bold; }
+        .cart-items-list { overflow-y: auto; max-height: 40vh; margin-bottom: 15px; }
+        .cart-item { display: flex; justify-content: space-between; align-items: center; background: #1c1c24; padding: 12px 14px; border-radius: 14px; margin-bottom: 8px; border: 1px solid var(--border-color); }
+        .cart-total { font-size: 16px; font-weight: bold; margin-bottom: 15px; display: flex; justify-content: space-between; border-top: 1px solid var(--border-color); padding-top: 15px; }
+        .btn-checkout { background: linear-gradient(135deg, #2e7d32, #1b5e20); color: #fff; border: none; width: 100%; padding: 15px; border-radius: 16px; font-size: 16px; font-weight: bold; cursor: pointer; text-align: center; box-shadow: 0 4px 15px rgba(46, 125, 50, 0.4); }
+        .btn-close-cart { background: #222; border: 1px solid var(--border-color); color: #fff; width: 34px; height: 34px; border-radius: 50%; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; }
+
+        .icon-btn { background: #222; border: 1px solid var(--border-color); color: #fff; width: 38px; height: 38px; border-radius: 12px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 16px; transition: 0.2s; }
+        .btn-plus { background: linear-gradient(135deg, #7b1fa2, #512da8); border: none; color: #fff; font-weight: bold; box-shadow: 0 0 12px var(--accent-glow); }
+
+        /* Нижняя панель навигации */
+        .bottom-nav {
+            position: fixed; bottom: 10px; left: 15px; right: 15px;
+            background: rgba(22, 22, 26, 0.9); backdrop-filter: blur(10px);
+            border: 1px solid var(--border-color); border-radius: 22px;
+            display: flex; justify-content: space-around; padding: 10px 0; z-index: 999;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .nav-item { background: none; border: none; color: var(--text-muted); display: flex; flex-direction: column; align-items: center; font-size: 11px; gap: 4px; cursor: pointer; transition: 0.2s; }
+        .nav-item.active { color: #fff; text-shadow: 0 0 10px var(--accent-glow); }
+        .nav-item svg { width: 20px; height: 20px; fill: currentColor; }
+
+        .no-results { text-align: center; color: var(--text-muted); padding: 40px; font-size: 14px; }
+        #toast { position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%); background: #222; color: #fff; padding: 12px 24px; border-radius: 14px; font-size: 14px; display: none; z-index: 20000; border: 1px solid var(--border-color); box-shadow: 0 5px 20px rgba(0,0,0,0.6); }
+    </style>
+</head>
+<body>
+
+    <!-- Заставка -->
+    <div id="splash-screen">
+        <img src="logo.png.jpg" class="splash-logo" alt="Logo">
+        <div class="splash-name">SOLOVAPE</div>
+    </div>
+
+    <!-- Шапка -->
+    <header>
+        <div class="brand">
+            <img src="logo.png.jpg" class="brand-logo" alt="Logo">
+            <span class="brand-name">SOLOVAPE</span>
+        </div>
+        <div class="top-controls">
+            <button class="btn-ctrl btn-cart" onclick="toggleCart()">🛒 <span id="cart-count">0</span></button>
+            <button class="btn-ctrl" onclick="toggleLang()" id="lang-toggle">🌐 RU</button>
+        </div>
+    </header>
+
+    <!-- Вкладка 1: Главная / Каталог -->
+    <div id="tab-catalog" class="tab-content active">
+        <!-- Поиск -->
+        <input type="text" id="search-input" class="search-box" placeholder="Поиск модели..." oninput="render()">
+
+        <!-- Категории -->
+        <div class="categories-scroll" id="categories-bar"></div>
+
+        <!-- Счетчик -->
+        <p id="counter" style="color: var(--text-muted); font-size: 13px; margin: 0 0 15px 5px;"></p>
+
+        <!-- Каталог моделей -->
+        <div id="catalog"></div>
+    </div>
+
+    <!-- Вкладка 2: О нас -->
+    <div id="tab-about" class="tab-content">
+        <div class="about-card">
+            <h2 id="about-title">О нас</h2>
+            <p id="about-text">Премиум вейп-шоп. Работаем с 2024 года по Нидерландам. Без онлайн-доставки — только оригинальные товары и быстрый заказ через Telegram.</p>
+        </div>
+
+        <div class="about-stats">
+            <div class="stat-box">
+                <h3>2024</h3>
+                <span id="stat-year">год основания</span>
+            </div>
+            <div class="stat-box">
+                <h3>1000+</h3>
+                <span id="stat-clients">клиентов</span>
+            </div>
+            <div class="stat-box">
+                <h3>100%</h3>
+                <span id="stat-original">оригинал</span>
+            </div>
+        </div>
+
+        <div class="about-card">
+            <h3 id="about-rules-title" style="font-size: 16px; margin: 0 0 8px 0; color: #fff;">Наши гарантии</h3>
+            <p id="about-rules-text">Никаких подделок. Честные цены и поддержка 24/7. Если что-то не так с товаром — заменим или вернем деньги без лишних вопросов.</p>
+        </div>
+    </div>
+
+    <!-- Модальное окно модели со вкусами -->
+    <div id="model-modal">
+        <div class="model-content">
+            <div class="model-header">
+                <div class="model-title-block">
+                    <h2 id="modal-model-title">Название модели</h2>
+                    <p id="modal-model-subtitle">Цена · Вариантов: 0</p>
+                </div>
+                <button class="btn-close-model" onclick="closeModelModal()">✕</button>
+            </div>
+            <div class="variants-list" id="modal-variants-container"></div>
+        </div>
+    </div>
+
+    <!-- Окно корзины -->
+    <div id="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <span id="cart-title-text">Корзина</span>
+                <button class="btn-close-cart" onclick="toggleCart()">✕</button>
+            </div>
+            <div class="cart-items-list" id="cart-items-container"></div>
+            <div class="cart-total">
+                <span id="total-text-label">Итого:</span>
+                <span id="cart-total-price">0 €</span>
+            </div>
+            <button class="btn-checkout" onclick="checkoutTelegram()">Оформить заказ в Telegram</button>
+        </div>
+    </div>
+
+    <!-- Нижняя панель навигации -->
+    <nav class="bottom-nav">
+        <button class="nav-item active" id="nav-btn-catalog" onclick="switchTab('catalog', event)">
+            <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            <span id="nav-cat-text">Каталог</span>
+        </button>
+        <button class="nav-item" onclick="toggleCart()">
+            <svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+            <span id="nav-cart-text">Корзина</span>
+        </button>
+        <button class="nav-item" id="nav-btn-about" onclick="switchTab('about', event)">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            <span id="nav-about-text">О нас</span>
+        </button>
+    </nav>
+
+    <div id="toast">Добавлено в корзину!</div>
+
+    <script>
+        window.onload = () => {
+            setTimeout(() => {
+                const splash = document.getElementById('splash-screen');
+                splash.style.opacity = '0';
+                setTimeout(() => { splash.style.display = 'none'; }, 800);
+            }, 2000);
+        };
+
+        let currentLang = 'ru';
+        let currentCategory = 'all';
+        let productData = {};
+        let cart = [];
+        let currentActiveModel = null;
+
+        fetch('products.json')
+            .then(res => res.json())
+            .then(data => {
+                productData = data;
+                render();
+            });
+
+        function toggleLang() {
+            currentLang = currentLang === 'ru' ? 'en' : 'ru';
+            document.getElementById('lang-toggle').innerText = currentLang === 'ru' ? '🌐 RU' : '🌐 EN';
+            document.getElementById('search-input').placeholder = currentLang === 'ru' ? 'Поиск модели...' : 'Search model...';
+            document.getElementById('cart-title-text').innerText = currentLang === 'ru' ? 'Корзина' : 'Cart';
+            document.getElementById('total-text-label').innerText = currentLang === 'ru' ? 'Итого:' : 'Total:';
+            
+            if (currentLang === 'ru') {
+                document.getElementById('nav-cat-text').innerText = 'Каталог';
+                document.getElementById('nav-cart-text').innerText = 'Корзина';
+                document.getElementById('nav-about-text').innerText = 'О нас';
+                document.getElementById('about-title').innerText = 'О нас';
+                document.getElementById('about-text').innerText = 'Премиум вейп-шоп. Работаем с 2024 года по Нидерландам. Без онлайн-доставки — только оригинальные товары и быстрый заказ через Telegram.';
+                document.getElementById('stat-year').innerText = 'год основания';
+                document.getElementById('stat-clients').innerText = 'клиентов';
+                document.getElementById('stat-original').innerText = 'оригинал';
+                document.getElementById('about-rules-title').innerText = 'Наши гарантии';
+                document.getElementById('about-rules-text').innerText = 'Никаких подделок. Честные цены и поддержка 24/7. Если что-то не так с товаром — заменим или вернем деньги без лишних вопросов.';
+            } else {
+                document.getElementById('nav-cat-text').innerText = 'Catalog';
+                document.getElementById('nav-cart-text').innerText = 'Cart';
+                document.getElementById('nav-about-text').innerText = 'About';
+                document.getElementById('about-title').innerText = 'About Us';
+                document.getElementById('about-text').innerText = 'Premium vape shop. Operating since 2024 across the Netherlands. No online shipping — original products only with fast ordering via Telegram.';
+                document.getElementById('stat-year').innerText = 'since year';
+                document.getElementById('stat-clients').innerText = 'clients';
+                document.getElementById('stat-original').innerText = 'original';
+                document.getElementById('about-rules-title').innerText = 'Our Guarantees';
+                document.getElementById('about-rules-text').innerText = 'No fakes. Fair prices and 24/7 support. If anything is wrong with the product — replacement or refund guaranteed.';
+            }
+
+            render();
+            updateCartUI();
+            if (currentActiveModel) openModelModal(currentActiveModel);
+        }
+
+        function switchTab(tabName, event) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+
+            if (tabName === 'catalog') {
+                document.getElementById('tab-catalog').classList.add('active');
+                document.getElementById('nav-btn-catalog').classList.add('active');
+            } else if (tabName === 'about') {
+                document.getElementById('tab-about').classList.add('active');
+                document.getElementById('nav-btn-about').classList.add('active');
+            }
+        }
+
+        function selectCategory(catName) {
+            currentCategory = catName;
+            render();
+        }
+
+        function render() {
+            const searchQuery = document.getElementById('search-input').value.toLowerCase();
+            const catBar = document.getElementById('categories-bar');
+            catBar.innerHTML = '';
+
+            let allText = currentLang === 'ru' ? 'Все категории' : 'All categories';
+            catBar.innerHTML += `<button class="cat-btn ${currentCategory === 'all' ? 'active' : ''}" onclick="selectCategory('all')">${allText}</button>`;
+
+            let totalModels = 0;
+
+            if (productData.categories) {
+                productData.categories.forEach(cat => {
+                    totalModels += cat.items.length;
+                    const cName = currentLang === 'ru' ? cat.name_ru : cat.name_en;
+                    const isActive = currentCategory === cat.name_ru ? 'active' : '';
+                    catBar.innerHTML += `<button class="cat-btn ${isActive}" onclick="selectCategory('${cat.name_ru}')">${cName}</button>`;
+                });
+            }
+
+            document.getElementById('counter').innerText = currentLang === 'ru' ? `${totalModels} моделей` : `${totalModels} models`;
+
+            const catalog = document.getElementById('catalog');
+            catalog.innerHTML = '';
+
+            let displayedCount = 0;
+
+            if (productData.categories) {
+                productData.categories.forEach(cat => {
+                    if (currentCategory !== 'all' && currentCategory !== cat.name_ru) return;
+
+                    cat.items.forEach(model => {
+                        const modelName = currentLang === 'ru' ? model.name_ru : model.name_en;
+                        
+                        if (searchQuery && !modelName.toLowerCase().includes(searchQuery)) {
+                            return;
+                        }
+
+                        displayedCount++;
+                        const catTitle = currentLang === 'ru' ? cat.name_ru : cat.name_en;
+                        const imgSrc = model.image ? model.image : 'https://images.unsplash.com/photo-1523275335684-37898b6baf30';
+                        const variantsCount = model.variants.length;
+                        const countText = currentLang === 'ru' ? `${variantsCount} вкусов` : `${variantsCount} flavors`;
+
+                        catalog.innerHTML += `
+                            <div class="product-card" onclick='openModelModal(${JSON.stringify(model)})'>
+                                <div class="product-left">
+                                    <img src="${imgSrc}" class="product-img" alt="">
+                                    <div class="product-info">
+                                        <h3>${modelName}</h3>
+                                        <p>${catTitle} · ${countText} · ${model.price}</p>
+                                    </div>
+                                </div>
+                                <div class="arrow-icon">›</div>
+                            </div>`;
+                    });
+                });
+            }
+
+            if (displayedCount === 0) {
+                catalog.innerHTML = `<div class="no-results">${currentLang === 'ru' ? 'Ничего не найдено 😔' : 'Nothing found 😔'}</div>`;
+            }
+        }
+
+        function openModelModal(model) {
+            currentActiveModel = model;
+            const modal = document.getElementById('model-modal');
+            const modelName = currentLang === 'ru' ? model.name_ru : model.name_en;
+            const variantsCountText = currentLang === 'ru' ? `Вариантов: ${model.variants.length}` : `Variants: ${model.variants.length}`;
+
+            document.getElementById('modal-model-title').innerText = modelName;
+            document.getElementById('modal-model-subtitle').innerText = `${model.price} · ${variantsCountText}`;
+
+            const container = document.getElementById('modal-variants-container');
+            container.innerHTML = '';
+
+            model.variants.forEach(variant => {
+                const variantName = currentLang === 'ru' ? variant.name_ru : variant.name_en;
+                const stockVal = variant.stock !== undefined ? variant.stock : 10;
+
+                container.innerHTML += `
+                    <div class="variant-item">
+                        <div class="variant-left">
+                            <div class="stock-indicator">${stockVal} шт</div>
+                            <div class="variant-info">
+                                <h4>${variantName}</h4>
+                                <span>${model.price}</span>
+                            </div>
+                        </div>
+                        <button class="icon-btn btn-plus" onclick='addToCart(${JSON.stringify(modelName + " (" + variantName + ")")}, ${JSON.stringify(model.price)})'>+</button>
+                    </div>`;
+            });
+
+            modal.style.display = 'flex';
+        }
+
+        function closeModelModal() {
+            document.getElementById('model-modal').style.display = 'none';
+            currentActiveModel = null;
+        }
+
+        function addToCart(fullName, price) {
+            cart.push({ title: fullName, price: price });
+            updateCartUI();
+            showToast(currentLang === 'ru' ? 'Добавлено в корзину!' : 'Added to cart!');
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            document.getElementById('cart-count').innerText = cart.length;
+            const container = document.getElementById('cart-items-container');
+            container.innerHTML = '';
+
+            if (cart.length === 0) {
+                container.innerHTML = `<div style="text-align:center; color:var(--text-muted); padding:20px;">${currentLang === 'ru' ? 'Корзина пуста' : 'Cart is empty'}</div>`;
+                document.getElementById('cart-total-price').innerText = '0 €';
+                return;
+            }
+
+            let totalPrice = 0;
+            cart.forEach((item, index) => {
+                const numericPrice = parseFloat(item.price.replace(/[^0-9.]/g, '')) || 0;
+                totalPrice += numericPrice;
+
+                container.innerHTML += `
+                    <div class="cart-item">
+                        <div>
+                            <div style="font-size:14px; font-weight:500;">${item.title}</div>
+                            <div style="font-size:12px; color:var(--text-muted);">${item.price}</div>
+                        </div>
+                        <button class="icon-btn" style="background:#222; width:32px; height:32px;" onclick="removeFromCart(${index})">✕</button>
+                    </div>`;
+            });
+
+            document.getElementById('cart-total-price').innerText = totalPrice + ' €';
+        }
+
+        function toggleCart() {
+            const modal = document.getElementById('cart-modal');
+            modal.style.display = modal.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        function checkoutTelegram() {
+            if (cart.length === 0) return;
+            
+            const randomOrderId = Math.floor(100 + Math.random() * 900);
+            const totalText = document.getElementById('cart-total-price').innerText;
+            
+            let itemsSummary = cart.map(i => i.title).join(', ');
+            
+            let orders = JSON.parse(localStorage.getItem('solo_orders') || '[]');
+            orders.push({ id: randomOrderId, items: itemsSummary, total: totalText, time: new Date().toLocaleString() });
+            localStorage.setItem('solo_orders', JSON.stringify(orders));
+
+            let message = currentLang === 'ru' 
+                ? `📦 Заказ #${randomOrderId} — ✅ Подтверждён\n\n🛍️ Состав:\n` 
+                : `📦 Order #${randomOrderId} — ✅ Confirmed\n\n🛍️ Items:\n`;
+
+            cart.forEach((item, i) => {
+                message += `• ${item.title} — ${item.price}\n`;
+            });
+
+            message += currentLang === 'ru' 
+                ? `\n💰 Итого: ${totalText}` 
+                : `\n💰 Total: ${totalText}`;
+
+            const tgLink = `https://t.me/Solo_Vape34?text=${encodeURIComponent(message)}`;
+            window.open(tgLink, '_blank');
+        }
+
+        function showToast(text) {
+            const toast = document.getElementById('toast');
+            toast.innerText = text;
+            toast.style.display = 'block';
+            setTimeout(() => { toast.style.display = 'none'; }, 1500);
+        }
+    </script>
+</body>
+</html>
