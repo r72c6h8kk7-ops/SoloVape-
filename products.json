@@ -10,8 +10,8 @@
           "price": "30 €",
           "image": "IMG_2835.jpeg",
           "variants": [
-            { "name_ru": "Granny cherry", "name_en": "Granny cherry", "stock": 10 },
-            { "name_ru": "Grape ice", "name_en": "Grape ice", "stock": 10 },
+            { "name_ru": "Granny cherry", "name_en": "Granny cherry", "stock": 1 },
+            { "name_ru": "Grape ice", "name_en": "Grape ice", "stock": 2 },
             { "name_ru": "Raspberry grapefruit lemon", "name_en": "Raspberry grapefruit lemon", "stock": 10 },
             { "name_ru": "Kiwi pineapple peach", "name_en": "Kiwi pineapple peach", "stock": 10 },
             { "name_ru": "Cherry pomegranate pineapple", "name_en": "Cherry pomegranate pineapple", "stock": 10 },
