@@ -1,0 +1,222 @@
+{
+  "categories": [
+    {
+      "name_ru": "Одноразки Elf Bar",
+      "name_en": "Elf Bar Disposables",
+      "items": [
+        {
+          "name_ru": "ELFBAR GH PRO 33000",
+          "name_en": "ELFBAR GH PRO 33000",
+          "price": "30 €",
+          "image": "IMG_2835.jpeg",
+          "variants": [
+            { "name_ru": "Granny cherry", "name_en": "Granny cherry" },
+            { "name_ru": "Grape ice", "name_en": "Grape ice" },
+            { "name_ru": "Raspberry grapefruit lemon", "name_en": "Raspberry grapefruit lemon" },
+            { "name_ru": "Kiwi pineapple peach", "name_en": "Kiwi pineapple peach" },
+            { "name_ru": "Cherry pomegranate pineapple", "name_en": "Cherry pomegranate pineapple" },
+            { "name_ru": "Watermelon ice", "name_en": "Watermelon ice" },
+            { "name_ru": "Pine Needles", "name_en": "Pine Needles" },
+            { "name_ru": "Blue razz ice", "name_en": "Blue razz ice" },
+            { "name_ru": "Pear soda", "name_en": "Pear soda" },
+            { "name_ru": "Sour strawberry dragonfruit", "name_en": "Sour strawberry dragonfruit" },
+            { "name_ru": "Pomegranate burst", "name_en": "Pomegranate burst" },
+            { "name_ru": "Banana milk", "name_en": "Banana milk" }
+          ]
+        },
+        {
+          "name_ru": "Elf Bar Raya D3 25000",
+          "name_en": "Elf Bar Raya D3 25000",
+          "price": "25 €",
+          "image": "IMG_3350.jpeg",
+          "variants": [
+            { "name_ru": "Blueberry raspberry", "name_en": "Blueberry raspberry" },
+            { "name_ru": "Strawberry watermelon", "name_en": "Strawberry watermelon" },
+            { "name_ru": "Watermelon", "name_en": "Watermelon" },
+            { "name_ru": "Grape mint", "name_en": "Grape mint" },
+            { "name_ru": "Grape cherry", "name_en": "Grape cherry" },
+            { "name_ru": "Blackberry cranberry", "name_en": "Blackberry cranberry" }
+          ]
+        },
+        {
+          "name_ru": "ELF BAR DUKE 30000",
+          "name_en": "ELF BAR DUKE 30000",
+          "price": "31 €",
+          "image": "IMG_3346.jpeg",
+          "variants": [
+            { "name_ru": "Strawberry Kiwi", "name_en": "Strawberry Kiwi" },
+            { "name_ru": "Sour Blackberry Ice", "name_en": "Sour Blackberry Ice" },
+            { "name_ru": "Cranberry Pineapple", "name_en": "Cranberry Pineapple" },
+            { "name_ru": "Pineapple Peach", "name_en": "Pineapple Peach" },
+            { "name_ru": "Nordic Berry", "name_en": "Nordic Berry" }
+          ]
+        }
+      ]
+    },
+    {
+      "name_ru": "Одноразки Vozol",
+      "name_en": "Vozol Disposables",
+      "items": [
+        {
+          "name_ru": "Vozol Shisha 25000",
+          "name_en": "Vozol Shisha 25000",
+          "price": "20 €",
+          "image": "IMG_3352.jpeg",
+          "variants": [
+            { "name_ru": "Blueberry ice", "name_en": "Blueberry ice" }
+          ]
+        },
+        {
+          "name_ru": "Vozol Vista 40000",
+          "name_en": "Vozol Vista 40000",
+          "price": "32 €",
+          "image": "IMG_3351.jpeg",
+          "variants": [
+            { "name_ru": "Double appel", "name_en": "Double appel" },
+            { "name_ru": "Cherry cola", "name_en": "Cherry cola" },
+            { "name_ru": "Strawberry watermelon", "name_en": "Strawberry watermelon" },
+            { "name_ru": "Watermelon ice", "name_en": "Watermelon ice" },
+            { "name_ru": "Grape ice", "name_en": "Grape ice" }
+          ]
+        }
+      ]
+    },
+    {
+      "name_ru": "Устройства Vaporesso",
+      "name_en": "Vaporesso Devices",
+      "items": [
+        {
+          "name_ru": "Vaporesso XROS 5",
+          "name_en": "Vaporesso XROS 5",
+          "price": "35 €",
+          "image": "IMG_3349.jpeg",
+          "variants": [
+            { "name_ru": "Lavender purple", "name_en": "Lavender purple" },
+            { "name_ru": "Cosmic black", "name_en": "Cosmic black" },
+            { "name_ru": "Coral red", "name_en": "Coral red" },
+            { "name_ru": "Blue silk", "name_en": "Blue silk" }
+          ]
+        },
+        {
+          "name_ru": "Vaporesso XROS 5 MINI",
+          "name_en": "Vaporesso XROS 5 MINI",
+          "price": "30 €",
+          "image": "IMG_3348.jpeg",
+          "variants": [
+            { "name_ru": "Blue silk", "name_en": "Blue silk" },
+            { "name_ru": "Violet silk", "name_en": "Violet silk" }
+          ]
+        },
+        {
+          "name_ru": "Vaporesso XROS 6",
+          "name_en": "Vaporesso XROS 6",
+          "price": "40 €",
+          "image": "IMG_3354.jpeg",
+          "variants": [
+            { "name_ru": "Pearl White", "name_en": "Pearl White" },
+            { "name_ru": "Dreamy Pink", "name_en": "Dreamy Pink" },
+            { "name_ru": "Scorching Cloud", "name_en": "Scorching Cloud" },
+            { "name_ru": "Silk Gray", "name_en": "Silk Gray" },
+            { "name_ru": "Silk Brown", "name_en": "Silk Brown" },
+            { "name_ru": "Abyssal Blue", "name_en": "Abyssal Blue" },
+            { "name_ru": "Carbon Fiber Gray", "name_en": "Carbon Fiber Gray" },
+            { "name_ru": "Cosmic Black", "name_en": "Cosmic Black" },
+            { "name_ru": "Slate Black", "name_en": "Slate Black" }
+          ]
+        },
+        {
+          "name_ru": "Vaporesso XROS 6 MINI",
+          "name_en": "Vaporesso XROS 6 MINI",
+          "price": "35 €",
+          "image": "IMG_3348.jpeg",
+          "variants": [
+            { "name_ru": "Black", "name_en": "Black" },
+            { "name_ru": "Brown", "name_en": "Brown" },
+            { "name_ru": "Titanium Black", "name_en": "Titanium Black" },
+            { "name_ru": "Titanium Silver", "name_en": "Titanium Silver" },
+            { "name_ru": "Plume White", "name_en": "Plume White" },
+            { "name_ru": "Plume Pink", "name_en": "Plume Pink" },
+            { "name_ru": "Plume Blue", "name_en": "Plume Blue" },
+            { "name_ru": "Jelly Green", "name_en": "Jelly Green" },
+            { "name_ru": "Jelly Pink", "name_en": "Jelly Pink" },
+            { "name_ru": "Jelly Blue", "name_en": "Jelly Blue" },
+            { "name_ru": "Jelly Orange", "name_en": "Jelly Orange" }
+          ]
+        },
+        {
+          "name_ru": "Vaporesso XROS Cartridges (4 pcs)",
+          "name_en": "Vaporesso XROS Cartridges (4 pcs)",
+          "price": "20 €",
+          "image": "IMG_3347.jpeg",
+          "variants": [
+            { "name_ru": "0.6 ohm", "name_en": "0.6 ohm" },
+            { "name_ru": "0.4 ohm", "name_en": "0.4 ohm" },
+            { "name_ru": "0.8 ohm", "name_en": "0.8 ohm" }
+          ]
+        }
+      ]
+    },
+    {
+      "name_ru": "Жидкости",
+      "name_en": "Liquids",
+      "items": [
+        {
+          "name_ru": "ELFBAR ELFLIQ (30ml, 5%)",
+          "name_en": "ELFBAR ELFLIQ (30ml, 5%)",
+          "price": "20 €",
+          "image": "IMG_3343.jpeg",
+          "variants": [
+            { "name_ru": "Apple Pear", "name_en": "Apple Pear" },
+            { "name_ru": "Grape Cherry", "name_en": "Grape Cherry" },
+            { "name_ru": "Spear Mint", "name_en": "Spear Mint" },
+            { "name_ru": "Grape", "name_en": "Grape" },
+            { "name_ru": "Cherry", "name_en": "Cherry" },
+            { "name_ru": "Jasmine Raspberry", "name_en": "Jasmine Raspberry" }
+          ]
+        },
+        {
+          "name_ru": "CHASER LUX (30ml, 5%)",
+          "name_en": "CHASER LUX (30ml, 5%)",
+          "price": "20 €",
+          "image": "IMG_3343.jpeg",
+          "variants": [
+            { "name_ru": "Blueberry Mint", "name_en": "Blueberry Mint" },
+            { "name_ru": "Grape Mint", "name_en": "Grape Mint" },
+            { "name_ru": "Mint", "name_en": "Mint" },
+            { "name_ru": "Tung Tung Tung Sahur", "name_en": "Tung Tung Tung Sahur" },
+            { "name_ru": "Ballerina Cappuccino", "name_en": "Ballerina Cappuccino" },
+            { "name_ru": "Energetic", "name_en": "Energetic" },
+            { "name_ru": "Sangria", "name_en": "Sangria" },
+            { "name_ru": "Vitamin", "name_en": "Vitamin" },
+            { "name_ru": "Bubblegum", "name_en": "Bubblegum" },
+            { "name_ru": "Forest Mint", "name_en": "Forest Mint" },
+            { "name_ru": "Triple Raspberry", "name_en": "Triple Raspberry" },
+            { "name_ru": "Compote", "name_en": "Compote" },
+            { "name_ru": "Grape Blackberry", "name_en": "Grape Blackberry" }
+          ]
+        }
+      ]
+    },
+    {
+      "name_ru": "Снюс CUBA",
+      "name_en": "CUBA Snus",
+      "items": [
+        {
+          "name_ru": "SNUS CUBA 66 mg",
+          "name_en": "SNUS CUBA 66 mg",
+          "price": "10 €",
+          "image": "IMG_3355.jpeg",
+          "variants": [
+            { "name_ru": "Watermelon", "name_en": "Watermelon" },
+            { "name_ru": "Icespear mint", "name_en": "Icespear mint" },
+            { "name_ru": "Pineapple", "name_en": "Pineapple" },
+            { "name_ru": "Banana hit", "name_en": "Banana hit" },
+            { "name_ru": "Cherry", "name_en": "Cherry" },
+            { "name_ru": "Blueberry", "name_en": "Blueberry" },
+            { "name_ru": "Baron classic", "name_en": "Baron classic" }
+          ]
+        }
+      ]
+    }
+  ]
+}
