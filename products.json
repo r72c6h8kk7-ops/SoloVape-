@@ -130,7 +130,6 @@
           "variants": [
             { "name_ru": "Black", "name_en": "Black", "stock": 1 },
             { "name_ru": "Brown", "name_en": "Brown", "stock": 1 },
-            { "name_ru": "Titanium Black", "name_en": "Titanium Black", "stock": 1 },
             { "name_ru": "Titanium Silver", "name_en": "Titanium Silver", "stock": 1 },
             { "name_ru": "Plume White", "name_en": "Plume White", "stock": 1 },
             { "name_ru": "Plume Pink", "name_en": "Plume Pink", "stock": 1 },
@@ -189,7 +188,7 @@
             { "name_ru": "Bubblegum", "name_en": "Bubblegum", "stock": 9 },
             { "name_ru": "Forest Mint", "name_en": "Forest Mix", "stock": 10 },
             { "name_ru": "Triple Raspberry", "name_en": "Triple Raspberry", "stock": 10 },
-            { "name_ru": "Compote", "name_en": "Compote", "stock": 9 },
+            { "name_ru": "Compote", "name_en": "Compote", "stock": 8 },
             { "name_ru": "Grape Blackberry", "name_en": "Grape Blackberry", "stock": 10 }
           ]
         }
