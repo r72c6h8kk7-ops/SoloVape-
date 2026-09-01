@@ -164,7 +164,7 @@
           "image": "IMG_3343.jpeg",
           "variants": [
             { "name_ru": "Apple Pear", "name_en": "Apple Pear", "stock": 3 },
-            { "name_ru": "Grape Cherry", "name_en": "Grape Cherry", "stock": 10 },
+            { "name_ru": "Grape Cherry", "name_en": "Grape Cherry", "stock": 9 },
             { "name_ru": "Spear Mint", "name_en": "Spear Mint", "stock": 7 },
             { "name_ru": "Grape", "name_en": "Grape", "stock": 7 },
             { "name_ru": "Cherry", "name_en": "Cherry", "stock": 7 },
