@@ -167,7 +167,7 @@
             { "name_ru": "Grape Cherry", "name_en": "Grape Cherry", "stock": 10 },
             { "name_ru": "Spear Mint", "name_en": "Spear Mint", "stock": 7 },
             { "name_ru": "Grape", "name_en": "Grape", "stock": 7 },
-            { "name_ru": "Cherry", "name_en": "Cherry", "stock": 8 },
+            { "name_ru": "Cherry", "name_en": "Cherry", "stock": 7 },
             { "name_ru": "Jasmine Raspberry", "name_en": "Jasmine Raspberry", "stock": 10 }
           ]
         },
@@ -186,7 +186,7 @@
             { "name_ru": "Sangria", "name_en": "Sangria", "stock": 10 },
             { "name_ru": "Vitamin", "name_en": "Vitamin", "stock": 10 },
             { "name_ru": "Bubblegum", "name_en": "Bubblegum", "stock": 9 },
-            { "name_ru": "Forest Mix", "name_en": "Forest Mix", "stock": 10 },
+            { "name_ru": "Forest Mix", "name_en": "Forest Mix", "stock": 9 },
             { "name_ru": "Triple Raspberry", "name_en": "Triple Raspberry", "stock": 10 },
             { "name_ru": "Compote", "name_en": "Compote", "stock": 8 },
             { "name_ru": "Grape Blackberry", "name_en": "Grape Blackberry", "stock": 10 }
