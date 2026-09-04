@@ -30,7 +30,7 @@
           "price": "25 €",
           "image": "IMG_3350.jpeg",
           "variants": [
-            { "name_ru": "Blueberry raspberry", "name_en": "Blueberry raspberry", "stock": 6 },
+            { "name_ru": "Blueberry raspberry", "name_en": "Blueberry raspberry", "stock": 5 },
             { "name_ru": "Strawberry watermelon", "name_en": "Strawberry watermelon", "stock": 1 },
             { "name_ru": "Watermelon", "name_en": "Watermelon", "stock": 1 },
             { "name_ru": "Grape mint", "name_en": "Grape mint", "stock": 10 },
