@@ -12,8 +12,8 @@
           "variants": [
             { "name_ru": "Granny cherry", "name_en": "Granny cherry", "stock": 9 },
             { "name_ru": "Grape ice", "name_en": "Grape ice", "stock": 3 },
-            { "name_ru": "Raspberry grapefruit lemon", "name_en": "Raspberry grapefruit lemon", "stock": 17 },
-            { "name_ru": "Kiwi pineapple peach", "name_en": "Kiwi pineapple peach", "stock": 10 },
+            { "name_ru": "Raspberry grapefruit lemon", "name_en": "Raspberry grapefruit lemon", "stock": 16 },
+            { "name_ru": "Kiwi pineapple peach", "name_en": "Kiwi pineapple peach", "stock": 9 },
             { "name_ru": "Cherry pomegranate pineapple", "name_en": "Cherry pomegranate pineapple", "stock": 14 },
             { "name_ru": "Watermelon ice", "name_en": "Watermelon ice", "stock": 1 },
             { "name_ru": "Pine Needles", "name_en": "Pine Needles", "stock": 7 },
