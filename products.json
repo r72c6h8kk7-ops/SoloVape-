@@ -45,7 +45,7 @@
           "image": "IMG_3346.jpeg",
           "variants": [
             { "name_ru": "Strawberry Kiwi", "name_en": "Strawberry Kiwi", "stock": 6 },
-            { "name_ru": "Sour Blackberry Ice", "name_en": "Sour Blackberry Ice", "stock": 10 },
+            { "name_ru": "Sour Blackberry Ice", "name_en": "Sour Blackberry Ice", "stock": 9 },
             { "name_ru": "Cranberry Pineapple", "name_en": "Cranberry Pineapple", "stock": 10 },
             { "name_ru": "Pineapple Peach", "name_en": "Pineapple Peach", "stock": 5 },
             { "name_ru": "Nordic Berry", "name_en": "Nordic Berry", "stock": 10 }
@@ -186,7 +186,7 @@
             { "name_ru": "Sangria", "name_en": "Sangria", "stock": 10 },
             { "name_ru": "Vitamin", "name_en": "Vitamin", "stock": 10 },
             { "name_ru": "Bubblegum", "name_en": "Bubblegum", "stock": 9 },
-            { "name_ru": "Forest Mix", "name_en": "Forest Mix", "stock": 9 },
+            { "name_ru": "Forest Mix", "name_en": "Forest Mix", "stock": 8 },
             { "name_ru": "Triple Raspberry", "name_en": "Triple Raspberry", "stock": 10 },
             { "name_ru": "Compote", "name_en": "Compote", "stock": 8 },
             { "name_ru": "Grape Blackberry", "name_en": "Grape Blackberry", "stock": 10 }
