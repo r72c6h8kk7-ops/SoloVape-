@@ -146,7 +146,7 @@
           "price": "20 €",
           "image": "IMG_3347.jpeg",
           "variants": [
-            { "name_ru": "0.6 ohm", "name_en": "0.6 ohm", "stock": 4 },
+            { "name_ru": "0.6 ohm", "name_en": "0.6 ohm", "stock": 3 },
             { "name_ru": "0.4 ohm", "name_en": "0.4 ohm", "stock": 18 },
             { "name_ru": "0.8 ohm", "name_en": "0.8 ohm", "stock": 1 }
           ]
@@ -166,7 +166,7 @@
             { "name_ru": "Apple Pear", "name_en": "Apple Pear", "stock": 2 },
             { "name_ru": "Grape Cherry", "name_en": "Grape Cherry", "stock": 8 },
             { "name_ru": "Spear Mint", "name_en": "Spear Mint", "stock": 6 },
-            { "name_ru": "Grape", "name_en": "Grape", "stock": 7 },
+            { "name_ru": "Grape", "name_en": "Grape", "stock": 6 },
             { "name_ru": "Cherry", "name_en": "Cherry", "stock": 6 },
             { "name_ru": "Jasmine Raspberry", "name_en": "Jasmine Raspberry", "stock": 10 }
           ]
