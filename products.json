@@ -96,15 +96,6 @@
           ]
         },
         {
-          "name_ru": "Vaporesso XROS 5 MINI",
-          "name_en": "Vaporesso XROS 5 MINI",
-          "price": "30 €",
-          "image": "IMG_3348.jpeg",
-          "variants": [
-            { "name_ru": "Violet silk", "name_en": "Violet silk", "stock": 1 }
-          ]
-        },
-        {
           "name_ru": "Vaporesso XROS 6",
           "name_en": "Vaporesso XROS 6",
           "price": "40 €",
