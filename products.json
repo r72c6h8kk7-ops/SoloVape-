@@ -199,6 +199,7 @@
             { "name_ru": "Pineapple", "name_en": "Pineapple", "stock": 4 },
             { "name_ru": "Cherry", "name_en": "Cherry", "stock": 1 },
             { "name_ru": "Baron classic", "name_en": "Baron classic", "stock": 1 }
+            { "name_ru": "Banana hit", "name_en": "Banana hit ", "stock": 1 },
           ]
         }
       ]
