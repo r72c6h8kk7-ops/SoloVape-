@@ -154,7 +154,7 @@
           "variants": [
             { "name_ru": "Apple Pear", "name_en": "Apple Pear", "stock": 1 },
             { "name_ru": "Grape Cherry", "name_en": "Grape Cherry", "stock": 8 },
-            { "name_ru": "Spear Mint", "name_en": "Spear Mint", "stock": 5 },
+            { "name_ru": "Spear Mint", "name_en": "Spear Mint", "stock": 4 },
             { "name_ru": "Grape", "name_en": "Grape", "stock": 4 },
             { "name_ru": "Cherry", "name_en": "Cherry", "stock": 4 },
             { "name_ru": "Jasmine Raspberry", "name_en": "Jasmine Raspberry", "stock": 10 }
@@ -167,7 +167,7 @@
           "image": "IMG_3344.jpeg",
           "variants": [
             { "name_ru": "Blueberry Mint", "name_en": "Blueberry Mint", "stock": 7 },
-            { "name_ru": "Grape Mint", "name_en": "Grape Mint", "stock": 1 },
+            { "name_ru": "Grape Mint", "name_en": "Grape Mint", "stock": 2 },
             { "name_ru": "Mint", "name_en": "Mint", "stock": 5 },
             { "name_ru": "Tung Tung Tung Sahur", "name_en": "Tung Tung Tung Sahur", "stock": 8 },
             { "name_ru": "Ballerina Cappuccino", "name_en": "Ballerina Cappuccino", "stock": 4 },
@@ -175,7 +175,7 @@
             { "name_ru": "Sangria", "name_en": "Sangria", "stock": 9 },
             { "name_ru": "Vitamin", "name_en": "Vitamin", "stock": 10 },
             { "name_ru": "Bubblegum", "name_en": "Bubblegum", "stock": 6 },
-            { "name_ru": "Forest Mix", "name_en": "Forest Mix", "stock": 8 },
+            { "name_ru": "Forest Mix", "name_en": "Forest Mix", "stock": 7 },
             { "name_ru": "Triple Raspberry", "name_en": "Triple Raspberry", "stock": 10 },
             { "name_ru": "Compote", "name_en": "Compote", "stock": 8 },
             { "name_ru": "Grape Blackberry", "name_en": "Grape Blackberry", "stock": 9 }
