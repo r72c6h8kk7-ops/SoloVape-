@@ -135,8 +135,8 @@
           "price": "20 €",
           "image": "IMG_3347.jpeg",
           "variants": [
-            { "name_ru": "0.6 ohm", "name_en": "0.6 ohm", "stock": 2 },
-            { "name_ru": "0.4 ohm", "name_en": "0.4 ohm", "stock": 17 },
+            { "name_ru": "0.6 ohm", "name_en": "0.6 ohm", "stock": 1 },
+            { "name_ru": "0.4 ohm", "name_en": "0.4 ohm", "stock": 18 },
             { "name_ru": "0.8 ohm", "name_en": "0.8 ohm", "stock": 1 }
           ]
         }
