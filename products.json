@@ -32,7 +32,7 @@
           "variants": [
             { "name_ru": "Grape mint", "name_en": "Grape mint", "stock": 10 },
             { "name_ru": "Grape cherry", "name_en": "Grape cherry", "stock": 1 },
-            { "name_ru": "Blackberry cranberry", "name_en": "Blackberry cranberry", "stock": 2 }
+            { "name_ru": "Blackberry cranberry", "name_en": "Blackberry cranberry", "stock": 1 }
           ]
         },
         {
