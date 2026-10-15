@@ -130,7 +130,7 @@
           "image": "IMG_3347.jpeg",
           "variants": [
             { "name_ru": "0.6 ohm", "name_en": "0.6 ohm", "stock": 9 },
-            { "name_ru": "0.4 ohm", "name_en": "0.4 ohm", "stock": 16 },
+            { "name_ru": "0.4 ohm", "name_en": "0.4 ohm", "stock": 15 },
             { "name_ru": "0.8 ohm", "name_en": "0.8 ohm", "stock": 11 }
           ]
         }
@@ -185,7 +185,7 @@
           "variants": [
             { "name_ru": "Apple Pear", "name_en": "Apple Pear", "stock": 11 },
             { "name_ru": "Grape Cherry", "name_en": "Grape Cherry", "stock": 6 },
-            { "name_ru": "Grape", "name_en": "Grape", "stock": 4 },
+            { "name_ru": "Grape", "name_en": "Grape", "stock": 3 },
             { "name_ru": "Cherry", "name_en": "Cherry", "stock": 3 },
             { "name_ru": "Jasmine Raspberry", "name_en": "Jasmine Raspberry", "stock": 10 },
             { "name_ru": "Pineapple Ice", "name_en": "Pineapple Ice", "stock": 7 },
@@ -204,7 +204,7 @@
             { "name_ru": "Mint", "name_en": "Mint", "stock": 5 },
             { "name_ru": "Tung Tung Tung Sahur", "name_en": "Tung Tung Tung Sahur", "stock": 8 },
             { "name_ru": "Ballerina Cappuccino", "name_en": "Ballerina Cappuccino", "stock": 4 },
-            { "name_ru": "Energetic", "name_en": "Energetic", "stock": 9 },
+            { "name_ru": "Energetic", "name_en": "Energetic", "stock": 8 },
             { "name_ru": "Sangria", "name_en": "Sangria", "stock": 9 },
             { "name_ru": "Vitamin", "name_en": "Vitamin", "stock": 9 },
             { "name_ru": "Bubblegum", "name_en": "Bubblegum", "stock": 6 },
