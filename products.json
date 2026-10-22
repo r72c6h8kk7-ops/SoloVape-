@@ -180,7 +180,7 @@
           "image": "IMG_3343.jpeg",
           "variants": [
             { "name_ru": "Apple Pear", "name_en": "Apple Pear", "stock": 11 },
-            { "name_ru": "Grape Cherry", "name_en": "Grape Cherry", "stock": 6 },
+            { "name_ru": "Grape Cherry", "name_en": "Grape Cherry", "stock": 5 },
             { "name_ru": "Grape", "name_en": "Grape", "stock": 3 },
             { "name_ru": "Cherry", "name_en": "Cherry", "stock": 3 },
             { "name_ru": "Jasmine Raspberry", "name_en": "Jasmine Raspberry", "stock": 10 },
