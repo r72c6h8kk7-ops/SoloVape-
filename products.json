@@ -18,7 +18,7 @@
             { "name_ru": "Blue razz ice", "name_en": "Blue razz ice", "stock": 4 },
             { "name_ru": "Pear soda", "name_en": "Pear soda", "stock": 11 },
             { "name_ru": "Sour strawberry dragonfruit", "name_en": "Sour strawberry dragonfruit", "stock": 5 },
-            { "name_ru": "Pomegranate burst", "name_en": "Pomegranate burst", "stock": 6 },
+            { "name_ru": "Pomegranate burst", "name_en": "Pomegranate burst", "stock": 5 },
             { "name_ru": "Banana milk", "name_en": "Banana milk", "stock": 5 }
           ]
         },
@@ -183,7 +183,7 @@
             { "name_ru": "Jasmine Raspberry", "name_en": "Jasmine Raspberry", "stock": 10 },
             { "name_ru": "Pineapple Ice", "name_en": "Pineapple Ice", "stock": 5 },
             { "name_ru": "Peach Ice", "name_en": "Peach Ice", "stock": 6 },
-            { "name_ru": "Strawberry Banana", "name_en": "Strawberry Banana", "stock": 9 }
+            { "name_ru": "Strawberry Banana", "name_en": "Strawberry Banana", "stock": 8 }
           ]
         },
         {
@@ -192,7 +192,7 @@
           "price": "20 €",
           "image": "IMG_3344.jpeg",
           "variants": [
-            { "name_ru": "Blueberry Mint", "name_en": "Blueberry Mint", "stock": 2 },
+            { "name_ru": "Blueberry Mint", "name_en": "Blueberry Mint", "stock": 1 },
             { "name_ru": "Grape Mint", "name_en": "Grape Mint", "stock": 9 },
             { "name_ru": "Mint", "name_en": "Mint", "stock": 5 },
             { "name_ru": "Tung Tung Tung Sahur", "name_en": "Tung Tung Tung Sahur", "stock": 8 },
