@@ -96,7 +96,6 @@
           "variants": [
             { "name_ru": "Pearl White", "name_en": "Pearl White", "stock": 1 },
             { "name_ru": "Dreamy Pink", "name_en": "Dreamy Pink", "stock": 1 },
-            { "name_ru": "Scorching Cloud", "name_en": "Scorching Cloud", "stock": 1 },
             { "name_ru": "Silk Brown", "name_en": "Silk Brown", "stock": 1 },
             { "name_ru": "Abyssal Blue", "name_en": "Abyssal Blue", "stock": 1 }
           ]
@@ -124,7 +123,7 @@
           "image": "IMG_3347.jpeg",
           "variants": [
             { "name_ru": "0.6 ohm", "name_en": "0.6 ohm", "stock": 8 },
-            { "name_ru": "0.4 ohm", "name_en": "0.4 ohm", "stock": 15 },
+            { "name_ru": "0.4 ohm", "name_en": "0.4 ohm", "stock": 14 },
             { "name_ru": "0.8 ohm", "name_en": "0.8 ohm", "stock": 10 }
           ]
         }
@@ -193,14 +192,14 @@
           "image": "IMG_3344.jpeg",
           "variants": [
             { "name_ru": "Blueberry Mint", "name_en": "Blueberry Mint", "stock": 1 },
-            { "name_ru": "Grape Mint", "name_en": "Grape Mint", "stock": 9 },
+            { "name_ru": "Grape Mint", "name_en": "Grape Mint", "stock": 8 },
             { "name_ru": "Mint", "name_en": "Mint", "stock": 5 },
             { "name_ru": "Tung Tung Tung Sahur", "name_en": "Tung Tung Tung Sahur", "stock": 8 },
             { "name_ru": "Ballerina Cappuccino", "name_en": "Ballerina Cappuccino", "stock": 4 },
             { "name_ru": "Energetic", "name_en": "Energetic", "stock": 8 },
             { "name_ru": "Sangria", "name_en": "Sangria", "stock": 9 },
             { "name_ru": "Vitamin", "name_en": "Vitamin", "stock": 9 },
-            { "name_ru": "Bubblegum", "name_en": "Bubblegum", "stock": 6 },
+            { "name_ru": "Bubblegum", "name_en": "Bubblegum", "stock": 5 },
             { "name_ru": "Forest Mix", "name_en": "Forest Mix", "stock": 5 },
             { "name_ru": "Triple Raspberry", "name_en": "Triple Raspberry", "stock": 10 },
             { "name_ru": "Compote", "name_en": "Compote", "stock": 8 },
