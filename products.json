@@ -37,7 +37,7 @@
           "price": "31 €",
           "image": "IMG_3346.jpeg",
           "variants": [
-            { "name_ru": "Strawberry Kiwi", "name_en": "Strawberry Kiwi", "stock": 5 },
+            { "name_ru": "Strawberry Kiwi", "name_en": "Strawberry Kiwi", "stock": 4 },
             { "name_ru": "Sour Blackberry Ice", "name_en": "Sour Blackberry Ice", "stock": 8 },
             { "name_ru": "Cranberry Pineapple", "name_en": "Cranberry Pineapple", "stock": 9 },
             { "name_ru": "Nordic Berry", "name_en": "Nordic Berry", "stock": 8 }
@@ -53,8 +53,7 @@
           "variants": [
             { "name_ru": "Double appel", "name_en": "Double appel", "stock": 1 },
             { "name_ru": "Grape ice", "name_en": "Grape ice", "stock": 4 },
-            { "name_ru": "Strawberry watermelon", "name_en": "Strawberry watermelon", "stock": 2 },
-            { "name_ru": "Watermelon ice", "name_en": "Watermelon ice", "stock": 1 }
+            { "name_ru": "Strawberry watermelon", "name_en": "Strawberry watermelon", "stock": 1 }
           ]
         }
       ]
