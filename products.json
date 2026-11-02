@@ -112,7 +112,7 @@
           "image": "IMG_3347.jpeg",
           "variants": [
             { "name_ru": "0.6 ohm", "name_en": "0.6 ohm", "stock": 8 },
-            { "name_ru": "0.4 ohm", "name_en": "0.4 ohm", "stock": 14 },
+            { "name_ru": "0.4 ohm", "name_en": "0.4 ohm", "stock": 13 },
             { "name_ru": "0.8 ohm", "name_en": "0.8 ohm", "stock": 10 }
           ]
         }
@@ -171,7 +171,7 @@
             { "name_ru": "Jasmine Raspberry", "name_en": "Jasmine Raspberry", "stock": 10 },
             { "name_ru": "Pineapple Ice", "name_en": "Pineapple Ice", "stock": 5 },
             { "name_ru": "Peach Ice", "name_en": "Peach Ice", "stock": 6 },
-            { "name_ru": "Strawberry Banana", "name_en": "Strawberry Banana", "stock": 7 }
+            { "name_ru": "Strawberry Banana", "name_en": "Strawberry Banana", "stock": 5 }
           ]
         },
         {
