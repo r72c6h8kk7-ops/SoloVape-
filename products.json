@@ -97,7 +97,6 @@
           "variants": [
             { "name_ru": "Brown", "name_en": "Brown", "stock": 1 },
             { "name_ru": "Titanium Silver", "name_en": "Titanium Silver", "stock": 1 },
-            { "name_ru": "Plume White", "name_en": "Plume White", "stock": 1 },
             { "name_ru": "Plume Pink", "name_en": "Plume Pink", "stock": 1 },
             { "name_ru": "Jelly Green", "name_en": "Jelly Green", "stock": 1 },
             { "name_ru": "Jelly Pink", "name_en": "Jelly Pink", "stock": 1 },
@@ -165,7 +164,7 @@
           "image": "IMG_3343.jpeg",
           "variants": [
             { "name_ru": "Apple Pear", "name_en": "Apple Pear", "stock": 11 },
-            { "name_ru": "Grape Cherry", "name_en": "Grape Cherry", "stock": 2 },
+            { "name_ru": "Grape Cherry", "name_en": "Grape Cherry", "stock": 1 },
             { "name_ru": "Cherry", "name_en": "Cherry", "stock": 2 },
             { "name_ru": "Jasmine Raspberry", "name_en": "Jasmine Raspberry", "stock": 9 },
             { "name_ru": "Pineapple Ice", "name_en": "Pineapple Ice", "stock": 2 },
