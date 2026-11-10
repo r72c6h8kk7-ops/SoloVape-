@@ -178,7 +178,7 @@
           "price": "20 €",
           "image": "IMG_3344.jpeg",
           "variants": [
-            { "name_ru": "Blueberry Mint", "name_en": "Blueberry Mint", "stock": 1 },
+            { "name_ru": "Blueberry Mint", "name_en": "Blueberry Mint", "stock": 3 },
             { "name_ru": "Grape Mint", "name_en": "Grape Mint", "stock": 7 },
             { "name_ru": "Mint", "name_en": "Mint", "stock": 4 },
             { "name_ru": "Tung Tung Tung Sahur", "name_en": "Tung Tung Tung Sahur", "stock": 8 },
@@ -186,10 +186,10 @@
             { "name_ru": "Energetic", "name_en": "Energetic", "stock": 7 },
             { "name_ru": "Sangria", "name_en": "Sangria", "stock": 9 },
             { "name_ru": "Vitamin", "name_en": "Vitamin", "stock": 9 },
-            { "name_ru": "Bubblegum", "name_en": "Bubblegum", "stock": 4 },
+            { "name_ru": "Bubblegum", "name_en": "Bubblegum", "stock": 2 },
             { "name_ru": "Forest Mix", "name_en": "Forest Mix", "stock": 5 },
-            { "name_ru": "Triple Raspberry", "name_en": "Triple Raspberry", "stock": 9 },
-            { "name_ru": "Compote", "name_en": "Compote", "stock": 7 },
+            { "name_ru": "Triple Raspberry", "name_en": "Triple Raspberry", "stock": 8 },
+            { "name_ru": "Compote", "name_en": "Compote", "stock": 6 },
             { "name_ru": "Grape Blackberry", "name_en": "Grape Blackberry", "stock": 9 }
           ]
         }
