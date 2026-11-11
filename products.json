@@ -46,12 +46,12 @@
         {
           "name_ru": "ELF BAR BC45000",
           "name_en": "ELF BAR BC45000",
-          "price": "34 €",
+          "price": "32 €",
           "image": "image_e64d24.jpg",
           "variants": [
-            { "name_ru": "Blackcurrant Grape", "name_en": "Blackcurrant Grape", "stock": 5 },
-            { "name_ru": "Strawberry Grapefruit", "name_en": "Strawberry Grapefruit", "stock": 5 },
-            { "name_ru": "Red Raspberry Strawberry", "name_en": "Red Raspberry Strawberry", "stock": 5 }
+            { "name_ru": "Blackcurrant Grape", "name_en": "Blackcurrant Grape", "stock": 10 },
+            { "name_ru": "Strawberry Grapefruit", "name_en": "Strawberry Grapefruit", "stock": 10 },
+            { "name_ru": "Red Raspberry Strawberry", "name_en": "Red Raspberry Strawberry", "stock": 10 }
           ]
         }
       ]
@@ -74,11 +74,11 @@
         {
           "name_ru": "Vozol Star 20000",
           "name_en": "Vozol Star 20000",
-          "price": "28 €",
+          "price": "25 €",
           "image": "image_642793.jpg",
           "variants": [
-            { "name_ru": "Raspberry Watermelon", "name_en": "Raspberry Watermelon", "stock": 5 },
-            { "name_ru": "Strawberry Mango", "name_en": "Strawberry Mango", "stock": 5 }
+            { "name_ru": "Raspberry Watermelon", "name_en": "Raspberry Watermelon", "stock": 20 },
+            { "name_ru": "Strawberry Mango", "name_en": "Strawberry Mango", "stock": 10 }
           ]
         }
       ]
@@ -190,10 +190,10 @@
             { "name_ru": "Pineapple Ice", "name_en": "Pineapple Ice", "stock": 2 },
             { "name_ru": "Peach Ice", "name_en": "Peach Ice", "stock": 4 },
             { "name_ru": "Strawberry Banana", "name_en": "Strawberry Banana", "stock": 4 },
-            { "name_ru": "Very Menthol", "name_en": "Very Menthol", "stock": 5 },
-            { "name_ru": "Blackcurrant Aniseed", "name_en": "Blackcurrant Aniseed", "stock": 5 },
-            { "name_ru": "Ocean Mint", "name_en": "Ocean Mint", "stock": 5 },
-            { "name_ru": "Lemon Sherbet", "name_en": "Lemon Sherbet", "stock": 5 }
+            { "name_ru": "Very Menthol", "name_en": "Very Menthol", "stock": 10 },
+            { "name_ru": "Blackcurrant Aniseed", "name_en": "Blackcurrant Aniseed", "stock": 10 },
+            { "name_ru": "Ocean Mint", "name_en": "Ocean Mint", "stock": 10 },
+            { "name_ru": "Lemon Sherbet", "name_en": "Lemon Sherbet", "stock": 10 }
           ]
         },
         {
