@@ -16,7 +16,7 @@
             { "name_ru": "Cherry pomegranate pineapple", "name_en": "Cherry pomegranate pineapple", "stock": 11 },
             { "name_ru": "Pine Needles", "name_en": "Pine Needles", "stock": 7 },
             { "name_ru": "Blue razz ice", "name_en": "Blue razz ice", "stock": 3 },
-            { "name_ru": "Pear soda", "name_en": "Pear soda", "stock": 11 },
+            { "name_ru": "Pear soda", "name_en": "Pear soda", "stock": 10 },
             { "name_ru": "Sour strawberry dragonfruit", "name_en": "Sour strawberry dragonfruit", "stock": 4 },
             { "name_ru": "Pomegranate burst", "name_en": "Pomegranate burst", "stock": 5 },
             { "name_ru": "Banana milk", "name_en": "Banana milk", "stock": 5 }
@@ -192,7 +192,7 @@
             { "name_ru": "Strawberry Banana", "name_en": "Strawberry Banana", "stock": 4 },
             { "name_ru": "Very Menthol", "name_en": "Very Menthol", "stock": 10 },
             { "name_ru": "Blackcurrant Aniseed", "name_en": "Blackcurrant Aniseed", "stock": 10 },
-            { "name_ru": "Ocean Mint", "name_en": "Ocean Mint", "stock": 10 },
+            { "name_ru": "Ocean Mint", "name_en": "Ocean Mint", "stock": 9 },
             { "name_ru": "Lemon Sherbet", "name_en": "Lemon Sherbet", "stock": 10 }
           ]
         },
