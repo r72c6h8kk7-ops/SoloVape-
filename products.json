@@ -51,7 +51,7 @@
           "variants": [
             { "name_ru": "Blackcurrant Grape", "name_en": "Blackcurrant Grape", "stock": 10 },
             { "name_ru": "Strawberry Grapefruit", "name_en": "Strawberry Grapefruit", "stock": 10 },
-            { "name_ru": "Red Raspberry Strawberry", "name_en": "Red Raspberry Strawberry", "stock": 10 }
+            { "name_ru": "Red Raspberry Strawberry", "name_en": "Red Raspberry Strawberry", "stock": 9 }
           ]
         }
       ]
