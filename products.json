@@ -228,7 +228,7 @@
           "image": "IMG_3345.jpeg",
           "variants": [
             { "name_ru": "Icespear mint", "name_en": "Icespear mint", "stock": 3 },
-            { "name_ru": "Pineapple", "name_en": "Pineapple", "stock": 3 },
+            { "name_ru": "Pineapple", "name_en": "Pineapple", "stock": 2 },
             { "name_ru": "Banana hit", "name_en": "Banana hit", "stock": 1 }
           ]
         }
