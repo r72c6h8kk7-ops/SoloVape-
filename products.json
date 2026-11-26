@@ -94,7 +94,6 @@
           "image": "IMG_3349.jpeg",
           "variants": [
             { "name_ru": "Lavender purple", "name_en": "Lavender purple", "stock": 1 },
-            { "name_ru": "Cosmic black", "name_en": "Cosmic black", "stock": 1 },
             { "name_ru": "Coral red", "name_en": "Coral red", "stock": 5 },
             { "name_ru": "Blue silk", "name_en": "Blue silk", "stock": 3 }
           ]
@@ -212,7 +211,7 @@
             { "name_ru": "Forest Mix", "name_en": "Forest Mix", "stock": 5 },
             { "name_ru": "Triple Raspberry", "name_en": "Triple Raspberry", "stock": 8 },
             { "name_ru": "Compote", "name_en": "Compote", "stock": 5 },
-            { "name_ru": "Grape Blackberry", "name_en": "Grape Blackberry", "stock": 7 }
+            { "name_ru": "Grape Blackberry", "name_en": "Grape Blackberry", "stock": 6 }
           ]
         }
       ]
