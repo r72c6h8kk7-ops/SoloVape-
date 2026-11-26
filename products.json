@@ -77,7 +77,7 @@
           "price": "25 €",
           "image": "IMG_4287.jpeg",
           "variants": [
-            { "name_ru": "Raspberry Watermelon", "name_en": "Raspberry Watermelon", "stock": 20 },
+            { "name_ru": "Raspberry Watermelon", "name_en": "Raspberry Watermelon", "stock": 19 },
             { "name_ru": "Strawberry Mango", "name_en": "Strawberry Mango", "stock": 10 }
           ]
         }
